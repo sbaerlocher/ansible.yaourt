@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Simon Bärlocher <sbaerlocher@sbaerlocher.ch>
+  author: Simon Baerlocher <sbaerlocher@sbaerlocher.ch>
   description: Install yaourt on archlinux based systems
   license: license (MIT)
   min_ansible_version: 1.2
