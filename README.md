@@ -4,6 +4,12 @@
 
 An Ansible role for installing `yaourt` on Arch Linux based systems.
 
+## Installation
+
+```
+$ ansible-galaxy install sbaerlocher.yaourt
+```
+
 ## Requirements
 
 None
@@ -18,9 +24,11 @@ None
 
 ## Example Playbook
 
+```yml
     - hosts: all
       roles:
         - sbaerlocher.yaourt
+```
 
 ## Changelog
 
