@@ -1,5 +1,5 @@
 ---
-# yaourt is a pacman front-end https://wiki.archlinux.org/index.php/Yaourt
+# tasks file for sbaerlocher.yaourt
 - name: "add archlinux.fr repository to pacman"
   lineinfile:
     dest: "/etc/pacman.conf"
