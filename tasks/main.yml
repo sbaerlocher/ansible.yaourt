@@ -1,0 +1,16 @@
+---
+# yaourt is a pacman front-end https://wiki.archlinux.org/index.php/Yaourt
+- name: "add archlinux.fr repository to pacman"
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "{{ item }}"
+  with_items:
+    - "[archlinuxfr]"
+    - "SigLevel = Never"
+    - "Server = http://repo.archlinux.fr/$arch"
+
+- name: "install yaourt"
+  pacman:
+    name: "yaourt"
+    state: "present"

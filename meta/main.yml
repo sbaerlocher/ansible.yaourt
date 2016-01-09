@@ -1,0 +1,13 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Simon Bärlocher <sbaerlocher@sbaerlocher.ch>
+  description: Install yaourt on archlinux based systems
+  license: MIT
+  platforms:
+  - name: arch linux
+    versions:
+    - all
+  categories:
+  - system
