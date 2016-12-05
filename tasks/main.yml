@@ -10,9 +10,13 @@
     - "SigLevel = Never"
     - "Server = http://repo.archlinux.fr/$arch"
   when: ansible_distribution == "ArchLinux"
-
+  tags:
+    - packages
+    
 - name: "install yaourt"
   pacman:
     name: "yaourt"
     state: "present"
   when: ansible_distribution == "ArchLinux"
+  tags:
+    - packages
